@@ -9,6 +9,7 @@ class SubSingleton1: public Singleton
  public:
   virtual bool IsValid(){return true;}
  private:
+  static Singleton *GetInstance();
   SubSingleton1(){};
   virtual ~SubSingleton1(){};
 };
